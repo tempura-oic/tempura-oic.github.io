@@ -89,9 +89,22 @@ header {
   background: linear-gradient(45deg, var(--primary), var(--success));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* 警告解消用 */
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.brand-logo {
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary), var(--success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* 警告解消用 */
 }
 
 /* Navigation Tabs */

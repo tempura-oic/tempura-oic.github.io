@@ -33,19 +33,19 @@
 <body>
   <div id="root"></div>
 
+  <!-- Reactロジック読み込み -->
+  <script type="text/babel" src="app.js"></script>
+
   <!-- PWA Service Worker 登録 -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-          .then(reg => console.log('Service Worker registered', reg))
-          .catch(err => console.error('Service Worker registration failed', err));
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('Service Worker registered'))
+          .catch(err => console.error('Service Worker failed', err));
       });
     }
   </script>
-
-  <!-- アプリケーションコード (BabelによるJSX処理用) -->
-  <script type="text/babel" src="app.js"></script>
 </body>
 
 </html>
