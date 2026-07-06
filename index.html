@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Home PWA Remote</title>
+  <title>Smart Home Mock Remote</title>
 
   <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
@@ -26,7 +26,7 @@
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <!-- Lucide Icons (ブラウザ向けパッケージ) -->
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -44,19 +44,8 @@
     }
   </script>
 
-  <!-- Firebase v10 SDK 読み込み (ES Modules) -->
-  <script type="importmap">
-    {
-      "imports": {
-        "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
-        "firebase/database": "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js",
-        "firebase/auth": "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"
-      }
-    }
-  </script>
-
   <!-- アプリケーションコード (BabelによるJSX処理用) -->
-  <script type="text/babel" data-type="module" src="app.js"></script>
+  <script type="text/babel" src="app.js"></script>
 </body>
 
 </html>
