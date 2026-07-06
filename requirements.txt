@@ -1,0 +1,2 @@
+firebase-admin>=6.4.0
+awsiotsdk>=1.20.0
